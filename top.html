@@ -15,6 +15,16 @@
             display:inline;
             list-style-type: none;
         }
+        .header{
+            float: right;
+        }
+        .header li{
+            margin: 8px;
+        }        
+        .header img{
+            width:45px;
+            height:40px;
+        }
         a{
             text-decoration: none;
         }
@@ -33,6 +43,13 @@
         a:active {
             color:#FFFFFF;
             text-decoration:none;
+        }
+
+        .hide{
+            /*position:fixed;
+            bottom:0;*/
+            
+
         }
     </style>
 
@@ -53,12 +70,15 @@
         <li><a href="albums.html" target="main">相册</a>|</li>
         <li><a href="clock.html" target="main">blog</a>|</li>
         <li><a href="clock.html" target="main">关于我</a></li>
-    </ul>
+   
+    <span class="header">
+        <li><a href="https://github.com/anthonylxd" target="_blank"><img src="images/forever/github.jpg"></a></li>
+         </ul>
+    </span>
+</div>
 
-<div style="text-align:center;clear:both">
+<div class="hide">
+<a href="fruit.html" target="main">水果忍者</a>
 </div>
-      <iframe frameborder="0" scrolling="no" src="clock.html" width="500" height="500px"></iframe>
-</div>
-<a href="fruit.html">水果忍者</a>
 </body>
 </html>
