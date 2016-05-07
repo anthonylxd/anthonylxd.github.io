@@ -16,6 +16,9 @@
             list-style-type: none;
         }
         .header{
+            top:15px;
+            right:10px;
+            position:fixed;
             float: right;
         }
         .header li{
@@ -28,7 +31,7 @@
         a{
             text-decoration: none;
         }
-        a:link {
+/*        a:link {
             color:#00FF00;
             text-decoration:none;
         }
@@ -43,7 +46,7 @@
         a:active {
             color:#FFFFFF;
             text-decoration:none;
-        }
+        }*/
 
         .hide{
             /*position:fixed;
@@ -52,7 +55,7 @@
 
         }
     </style>
-
+<link rel="stylesheet" href="css/menu.css" media="screen" type="text/css" />
     <meta name="viewport"  content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
     <meta name="author" content="Dajun"/>
 
@@ -62,13 +65,14 @@
 <div clas="top">
     </div>
 <div class="head">
+<nav class="navigation" role="navigation">
     <ul>
-    	<li><a href="center.html" target="main">首页</a>|</li>
-        <li><a href="clock.html" target="main">博客</a>|</li>
-        <li><a href="albums.html" target="main">相册</a>|</li>
-        <li><a href="works.html" target="main">作品</a>|</li>
+    	<li><a href="center.html" target="main">首页</a></li>
+        <li><a href="blog.html" target="main">博客</a></li>
+        <li><a href="albums.html" target="main">相册</a></li>
+        <li><a href="works.html" target="main">作品</a></li>
         <li><a href="clock.html" target="main">关于我</a></li>
-   
+</nav>
     <span class="header">
         <li><a href="https://github.com/anthonylxd" target="_blank" alt="我的github"><img src="images/forever/github.jpg"></a></li>
         <li><a href="http://weibo.com/u/1770919440" target="_blank" alt="我的微博"><img src="images/forever/weibo.jpg"></a></li>

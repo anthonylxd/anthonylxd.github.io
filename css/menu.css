@@ -1,0 +1,94 @@
+/*!
+ * offCanvas
+ * 
+ * 
+ * @author Chris Yaxley
+ * @version 0.0.0
+ * Copyright . BSD licensed.
+ */
+
+/* -------------------------------------------------------------------------- */
+/* ---------- Compass ------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.navigation li {
+  background-color:AFEEEE;
+  margin: 0;
+  padding: 1em;
+  transition: all .5s;
+  width: 100%;
+  -webkit-box-flex: auto;
+  -webkit-flex: auto;
+  -moz-box-flex: auto;
+  flex: auto;
+  -webkit-transition: all .5s;
+  /* Safari */
+}
+
+
+.navigation li:hover {
+  background-color: #414141;
+}
+
+.navigation li:first-child {
+  border-bottom: 5px solid #fc9c9c;
+}
+
+.navigation li:nth-child(2) {
+  border-bottom: 5px solid #FFC;
+}
+
+.navigation li:nth-child(2):hover {
+  border-bottom: 5px solid #FF0;
+}
+
+.navigation li:nth-child(3) {
+  border-bottom: 5px solid #39F;
+}
+
+.navigation li:nth-child(3):hover {
+  border-bottom: 5px solid #00F;
+}
+
+.navigation li:nth-child(4) {
+  border-bottom: 5px solid #6F9;
+}
+
+.navigation li:nth-child(4):hover {
+  border-bottom: 5px solid #0C0;
+}
+
+.navigation li:first-child:hover {
+  border-bottom: 5px solid #ff0000;
+}
+
+.navigation li:last-child {
+  border-bottom: 5px solid #666666;
+}
+
+.navigation li:last-child:hover {
+  border-bottom: 5px solid #ffffff;
+}
+
+.navigation li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navigation li:hover a {
+  text-decoration: underline;
+}
+
+.navigation li:hover a {
+  text-decoration: underline;
+}
+
+   .navigation ul{
+    width: 100%;
+    position: relative;
+    max-width: 60em;
+    left: 0;
+    display: -moz-box;
+    display: -webkit-box;
+    display: box;
+  }
