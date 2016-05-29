@@ -10,17 +10,36 @@
     font-family: "宋体";
     font-size: 12px;
  }
-p{color:green!important;
+p{  color:green!important;
 	font-style: italic;
 	text-indent: 2em;
 	line-height: 1.5em;
 	text-align: center;
 }	
 div{
-	border: 2px solid red;
+	background-color:rgb(102,255,153);
+	border-radius: 10px;
+	box-shadow: 4px 2px 6px #333333 inset;
+	
 }
+    .one{
+		border:1px solid #eee;
+		width:230px;
+		height:50px;
+		background:#ccc;
+		color:red;
+    }
+	.two{
+		border:1px solid #ccc;
+		width:230px;
+		height:50px;
+		background:#9CF;
+		color:blue;
+	}
 
 </style>
+<script src="js/test.js">
+</script>
 </head>
 <body>
 <div>
@@ -40,11 +59,16 @@ div{
  <br/>
 <input type="submit" value="提交">&nbsp
 <input type="reset" value="重置">
-</form>
+
 </div>
 	<hr/>
 	<p>百川东到海，何时复西归，<br/>少壮不努力，老大徒伤悲<br/>
 						《长歌行》</p>
-
+	<p id="con">天下风云出我辈，一入江湖岁月催，皇图霸业谈笑中，不胜人生一场醉。提剑跨骑挥鬼雨，白骨如山鸟惊飞;尘事如潮人如水，只叹江湖几人回。</p>
+	<input type="button" onclick="hidetext()" value="不显示"/>
+	<input type="button" onclick="showtext()" value="显示"/>
+	<p id="conn" class="one">天下风云出我辈，一入江湖岁月催，皇图霸业谈笑中，不胜人生一场醉。提剑跨骑挥鬼雨，白骨如山鸟惊飞;尘事如潮人如水，只叹江湖几人回。</p>
+<input type="button" value="点击更改" onclick="modify()"/> 
+</form>
 </body>
 </html>
