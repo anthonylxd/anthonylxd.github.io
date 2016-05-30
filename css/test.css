@@ -1,0 +1,32 @@
+ body{
+    background:url("");
+    background-size: cover;
+    font-family: "宋体";
+    font-size: 12px;
+ }
+p{  color:green!important;
+	font-style: italic;
+	text-indent: 2em;
+	line-height: 1.5em;
+	text-align: center;
+}	
+div{
+	background-color:rgb(102,255,153);
+	border-radius: 10px;
+	box-shadow: 4px 2px 6px #333333 inset;
+	
+}
+    .one{
+		border:1px solid #eee;
+		width:230px;
+		height:50px;
+		background:#ccc;
+		color:red;
+    }
+	.two{
+		border:1px solid #ccc;
+		width:230px;
+		height:50px;
+		background:#9CF;
+		color:blue;
+	}
