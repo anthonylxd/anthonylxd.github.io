@@ -52,19 +52,19 @@
 }
 
 .nav label {
-    width: 200px;
+    width: 100px;
     height: 100%;
     display: none;
     position: absolute;
 
-	  opacity: 0;
+	opacity: 0;
     z-index: 9;
     cursor: pointer;
 
     transition: opacity .2s;
 
     color: #FFF;
-    font-size: 156pt;
+    font-size: 100pt;
     text-align: center;
     line-height: 380px;
     font-family: "Varela Round", sans-serif;

@@ -30,3 +30,4 @@ function showtext()
 	      var p2 = document.getElementById("conn");
 	      p2.className="two";
 	   }
+document.write("I love JavaScript!");
