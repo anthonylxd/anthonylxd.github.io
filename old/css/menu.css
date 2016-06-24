@@ -6,10 +6,6 @@
  * @version 0.0.0
  * Copyright . BSD licensed.
  */
-
-/* -------------------------------------------------------------------------- */
-/* ---------- Compass ------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
 *{margin:0;padding:0;}
 .head{
   padding-top: 10px;
@@ -111,3 +107,20 @@
     display: -webkit-box;
     display: box;
   }
+/*.navigation ul li{
+  position: relative;
+}*/
+
+.navigation ul li ul{
+  margin: 0px;
+  float: left;
+  display: none;
+  position: relative;
+  
+}
+.navigation ul li:hover ul{
+  display: block;
+}
+.navigation ul li ul li a{
+  text-decoration: none;
+}

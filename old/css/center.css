@@ -121,3 +121,9 @@ input#img-5:checked ~ .nav-dots label#img-dot-5,
 input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	background: rgba(0, 0, 0, 0.8);
 }
+.content-img img{
+margin:25px 390px; 
+width: 180px;
+height: 210px;
+
+}
