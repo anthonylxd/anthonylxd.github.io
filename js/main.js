@@ -4,7 +4,8 @@
 
 	var sidebar = $('#sidebar'),//选择侧栏
 		mask= $('#mask'),
-		sidebar_trigger = $('#sidebar_trigger');
+		sidebar_trigger = $('#sidebar_trigger'),
+		backButton = $('.back-to-top');		
 		
 		function showSidebar(){
 			mask.fadeIn();
@@ -15,10 +16,28 @@
 			mask.fadeOut();
 			sidebar.css('right',-sidebar.width());
 		}
-
-
-
 		sidebar_trigger.on('click',showSidebar)
 		mask.on('click',hideSidebar)
 		
+
+		function backtop(){
+			$('html, body').animate({
+				scrollTop:0
+			},800)
+		}
+		backButton.on('click',backtop)
+		
+
+
+		$(window).on('scroll',function(){
+			if($(window).scrollTop()>$(window).height())
+					backButton.fadeIn();
+				else
+					backButton.fadeOut();
+		})
+		
+		$(window).trigger('scroll');
+		
+
+
 })
