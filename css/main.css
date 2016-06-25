@@ -3,6 +3,15 @@
 	display: block;
 	clear: both;
 }
+.mask{
+	
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background:rgba(0,0,0,0.8);	
+}
 ul{
 	margin: 0;
 }
@@ -11,7 +20,7 @@ a{
 	color: #fff;
 }
 header{
-	background: rgba(0,0,0,0.4);
+	background: rgba(0,0,0,0.2);
 }
 nav{
 	background:transparent;
@@ -233,4 +242,41 @@ ul .share-group{
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center center;
+	overflow: hidden;
+}
+#mask{
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);	
+}
+#sidebar{
+	position: fixed;
+	width: 220px;
+	background: #333;
+	color: #fff;
+	top: 0;
+	right: -220px;
+	bottom: 0;
+	padding: 20px 0;
+	transition: right 0.5s;
+}
+#sidebar ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#sidebar ul a{
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 30px;
+	width:100%;
+	display: inline-block;
+}
+#sidebar ul a:hover{
+	background: #444;
 }
