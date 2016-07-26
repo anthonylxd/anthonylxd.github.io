@@ -28,7 +28,7 @@ nav{
 }
 #banner{
 	background:transparent;
-	height: 700px;
+	height: 300px;
 }
 nav ul{
 	list-style: none;
@@ -57,7 +57,7 @@ nav ul li.logo{
 	text-align: center;
 	margin: 0 auto;
 	position: relative;
-	top:160px;
+	top:30px;
 }
 #banner .inner h1{
 margin: 0px;
@@ -92,6 +92,9 @@ button{
 .active{
 	 
 }
+h1{
+	border: none;
+}
 h2{
 	font-size: 30px;
 }
@@ -106,121 +109,27 @@ p{
 	width: 100%;
 	height: 2px;
 	margin: 20px auto;
+}
 
+.content_wrapper{
+	width: 1080px;
+	margin: 0 auto;
 }
-.green-section{
-	text-align: center;
-	background:#089DB0;
-	color:#fff; 
-	padding: 100px 0;
+.content{
+	background: #fefefe;
 }
-.green-section .hr{
-	background: #078494;
-	width: 60%;
+.article_info{
+	font-size: 14px;
+	color: #888;
+	padding: 15px 0;
 }
-.green-section .icon-group .icon{
-	display: inline-block;
-	width: 80px;
-	height: 80px;
-	background:#0D6F7C; 
-	transform: rotate(45deg);
-	margin: 20px;
+article{
+	line-height: 2;
+	padding: 10px 0;
 }
-.sub-heading{
-	font-size: 18px;
-	margin: 30px 0;
-}
-.icon-group{
-margin: 60px;
-}
-.icon img{
-	width: 81px;
-	height: 81px;
-}
-.wrapper{
-	max-width: 1080px;
-	margin:0 auto; 
-}
-.gray-section{
-	background: #252F34;
-	color: #fff;
-}
-.gray-section .img-section{
-	width: 45%;
-}
-.img-section img{
-	width: 100%;
-}
-.gray-section .text-section{
-	width: 55%;
-}
-.article-preview > div{
-	float: left;
-	font-size: 0;
-}
-.article-preview:nth-child(odd){
-	background-color: rgba(255,255,255,0.05);
-}
-.article-preview:after{
-	content:'';
-	display: block;
-	clear: both;
-}
-.text-section{
-	position: relative;
-	top: 68px;
-	left: 50px;
-}
-.text-section h2{
-	margin-bottom:22px; 
-	margin-top:0; 
-	font-size: 25px;
-}
-.text-section .sub-heading{
-	font-size:22px; 
-	margin-top:0; 
-}
-.text-section p{
-	font-size: 18px;
-	letter-spacing: 1px;
-}
-.text-section > *{
-	max-width: 90%;
-}
-.purple-section{
-	padding:80px; 
-	background:#104E8B;
-	color: #fff;
-}
-.purple-section .heading-wrapper{
-	text-align: center;
-}
-.purple-section .hr{
-	background:#373259;
-	width: 60%;
-}
-.card{
-	float: left;
-	width:50%;
-	min-height: 300px;
-	padding:50px; 
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing: border-box;
-/*	border: 1px solid white;*/
-}
-.card:first-child{
-	background:rgba(0,0,0,0.08);
-}
-.card:nth-child(2){
-	background:rgba(0,0,0,0.12);
-}
-.card:nth-child(3){
-	background:rgba(0,0,0,0.16);
-}
-.card:nth-child(4){
-	background:rgba(0,0,0,0.20);
-}
+
+
+
 footer{
 	background:#333; 
 	color: #fff;
