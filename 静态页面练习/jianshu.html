@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<style type="text/css">
+	a{
+		text-decoration: none;
+	}
+	.left{
+		position: fixed;
+		display: block;
+		height: 100%;
+		width:26%; 
+	}
+	.left-nav{
+		float: left;
+		width: 12%;
+		height: 100%;
+		/*border: 1px solid #000;*/
+		background: #555555;		
+	}
+	.left-nav li:hover{
+		background-color:#e78170; 
+	}
+	.left-nav img{
+		width: 30px;
+		height: 30px;
+		margin: 8px 5px;
+	}
+	.left-img{
+		background-image: url("images/your name.jpg");
+		background-size: 100% 100%;
+	}
+	.left-img{
+		float: left;
+		width: 88%;
+		height: 100%;
+	}
+	.left-img img{
+		width: 88%;
+		height: 100%;
+	}
+
+	.right{
+		margin-left: 26%;
+
+	}
+	.right-nav{
+		height:64px;
+		width:100%;
+		position: fixed;
+		border-bottom: 1px solid gray;
+		background: #fff;
+		z-index: 3;
+	}
+	.right-nav-left{
+		
+	}
+	.search{
+		position: relative;
+		top: 10px;
+		left: 120px;
+		border: 1px solid blue;
+		border-radius: 12px;
+		width: 180px;
+		height: 30px; 
+		outline: none;
+		text-indent:5px;
+	}
+	.right-nav-left li{
+		list-style: none;
+		float: left;
+		margin: 0px 0px 10px 0px;
+		width: 72px;
+		height: 48px;
+		text-align: center;
+		line-height: 48px;
+	}
+	.right-nav-left li:hover{
+		border-bottom: 1px solid #000;
+		background-color:gray;
+	}
+	.right-menus{
+		position: relative;
+		top: 72px;
+		width: 80%;
+		line-height: 36px;
+	}
+	.right-menus li{
+		display: inline;
+		border: 1px solid #555;
+		border-radius: 10px;	
+		margin: 5px;
+		padding: 3px 10px;
+		font-size: 14px;
+		color: gray;
+	}
+	.right-content{
+		position: relative;
+		top: 96px;
+		width: 80%;
+		background: #fff;
+	}
+	.content{
+		margin: 6px;
+	}
+	.content a{
+		font-size: 15px;
+		margin-left:25px;
+	}
+	.author-name{
+		color: blue;
+	}
+	.content span{
+		display: block;
+		font-size: 14px;
+		color: gray;
+		margin: 4px 0px;
+	}
+	.content h4{
+		font-size: 20px;
+		color: #000;
+		margin: 20px 0px 10px 30px;
+	}
+	.content img{
+		float: right;
+		display: inline-block;
+		margin-left: 300px;
+		width: 80px;
+		height: 80px;
+		vertical-align: middle;
+	}
+	.right-footer{
+		height: 54px;
+		border-top: 1px solid #999;
+	}
+	.right-footer li{
+		display: inline-block;
+		font-size: 12px;
+		border-right: 1px solid #999;
+		padding: 2px 5px;
+		margin: 5px 0px;
+		color:gray;
+	}
+	</style>
+</head>
+<body>
+<div class="left">
+	<div class="left-nav">
+		<ul class="left-nav-header">
+			<li><a href="#"><img src="images/UI1.jpg" title="首页" alt="首页"/></a></li>
+			<li><a href="#"><img src="images/UI2.png" title="首页" alt="首页"/></a></li>
+			<li><a href="#"><img src="images/UI3.jpg" title="首页" alt="首页"/></a></li>
+			<li><a href="#"><img src="images/UI2.png" title="首页" alt="首页"/></a></li>		
+		</ul>
+		<ul class="left-nav-footer">
+
+		</ul>
+	</div>
+	<div class="left-img">
+		<!-- <img src="images/your name.jpg"> -->
+	</div>
+</div>
+
+<div class="right">
+	<div class="right-nav">
+		<ul class="right-nav-left">
+			<li><a href="">发现</a></li>
+			<li><a href="">关注</a></li>
+			<li><a href="">2015精选</a></li>
+		</ul>
+		<input class="search" type="text" placeholder="搜索"/>
+	</div>
+
+	<div class="right-menus">
+		<ul>
+			<a href=""><li>热门</li></a>
+			<a href=""><li>小说精选</li></a>
+			<a href=""><li>摄影游记</li></a>
+			<a href=""><li>漫画手绘</li></a>
+			<a href=""><li>签约作者</li></a>
+			<a href=""><li>新上榜</li></a>
+			<a href=""><li>七日热门</li></a>
+			<a href=""><li>三十日热门</li></a>
+			<a href=""><li>日报</li></a>
+			<a href=""><li>专题精选</li></a>
+			<a href=""><li>有奖活动</li></a>
+		</ul>
+	</div>
+	<div class="right-content">
+		<div class="content">
+			<span>
+			<a class="author-name">吉尔金闪闪</a> — 大约12小时前
+			<h4>论ADC的使用小诀窍</h4>	
+			</span>				
+			<span><a>阅读 2699 </a>·<a>评论 82</a>·<a>喜欢 196</a>·<a>打赏 2</a></span>
+		</div>
+		<div class="content">
+			<span>
+			<a class="author-name">快到碗里来</a> — 大约12小时前
+			<h4>教你辅助如何拿到MVP</h4>	
+			</span>				
+			<span><a>阅读 2699 </a>·<a>评论 82</a>·<a>喜欢 196</a>·<a>打赏 2</a></span>
+		</div>		
+		<div class="content">
+			<span>
+			<a class="author-name">想杀朕谈何容易</a> — 大约12小时前
+			<h4>风骚走位-五杀就是这么简单</h4>	
+			</span>				
+			<span><a>阅读 2699 </a>·<a>评论 82</a>·<a>喜欢 196</a>·<a>打赏 2</a></span>
+		</div>
+		<div class="content">
+			<span>
+			<a class="author-name">杨过大虾</a> — 大约12小时前
+			<h4>进球就是这么简单（论前锋的跑位与射门）</h4>	
+			</span>				
+			<span><a>阅读 2699 </a>·<a>评论 82</a>·<a>喜欢 196</a>·<a>打赏 2</a></span>
+		</div>
+		<div class="content">
+			<span>
+			<a class="author-name">静水流深</a> — 大约12小时前
+			<h4>牛</h4>	
+			</span>				
+			<span><a>阅读 2699 </a>·<a>评论 82</a>·<a>喜欢 196</a>·<a>打赏 2</a></span>
+		</div>
+	<div class="right-footer">
+		<ul>
+			<li>关于我们</li>
+			<li>联系我们</li>
+			<li>未来计划</li>
+			<li>帮助中心</li>
+			<li>其它周边</li>
+			<li>意见反馈</li>
+		</ul>
+	</div>
+</div>
+
+</body>
+</html>
