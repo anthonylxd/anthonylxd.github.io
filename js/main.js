@@ -6,7 +6,9 @@ $(function()
 		mask= $('#mask'),
 		sidebar_trigger = $('#sidebar_trigger'),
 		backButton = $('.back-to-top'),
-		blogbtn = $('#blogbtn');
+		itembtn = $('#itembtn'),
+		workbtn = $('#workbtn'),
+		skillbtn = $('#skillbtn');
 		
 		function showSidebar(){
 			mask.fadeIn();
@@ -39,12 +41,25 @@ $(function()
 		
 		$(window).trigger('scroll');
 	
-		function backblog(){
+		function backitem(){
 			$('html, body').animate({
-				scrollTop:790
+				scrollTop:1730
 			},800)
 		}
-		blogbtn.on('click',backblog);
+		function backwork(){
+			$('html, body').animate({
+				scrollTop:1130
+			},800)
+		}
+		function backskill(){
+			$('html, body').animate({
+				scrollTop:590
+			},800)
+		}
+
+		itembtn.on('click',backitem);
+		workbtn.on('click',backwork);
+		skillbtn.on('click',backskill);
 
 
 })

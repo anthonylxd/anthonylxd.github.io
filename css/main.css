@@ -6,6 +6,10 @@ a{
 	text-decoration:none;
 	color: #fff;
 }
+section {
+	margin: 0 auto;
+	width: 1024px;	
+}
 header nav{
 	background: #42474B;
 }
@@ -238,7 +242,53 @@ h2 {
 	height: 27px;
 	width: 868px;
 	padding-top:120px; 
-	background:url(../image/timeline.png) no-repeat center
+	background:url(../image/timeline.png) no-repeat center;
+}
+
+.content-fourth {
+	
+}
+.content-fourth .item-group span{
+	display: inline-block;
+	width: 360px;
+	margin: 0px 60px; 
+	vertical-align: top; 
+}
+.item-group {
+	padding-top: 20px;
+	text-align: center;
+}
+.item-group h3 {
+	border-bottom: 2px solid #7E884F;
+	display: inline;
+}
+.item-group h3:hover {
+	border-bottom: 2px solid #fff;
+}
+.item-group .item1 {
+	background: url(../image/weibo.jpg) no-repeat center;
+	background-size: 100%; 
+	width: 140px;
+	height: 140px;
+	border-radius: 200px;
+	margin:0px auto;
+	margin-bottom:20px; 
+	border:8px solid #fff; 
+}
+.item-group p {
+	margin-top: 20px;
+	font-size: 18px;
+	text-align: left;
+}
+.item-group .item2 {
+	background: url(../image/area-simple.png) no-repeat center;
+	background-size: 100%; 
+	width: 140px;
+	height: 140px;
+	border-radius: 200px;
+	margin:0 auto;
+	margin-bottom:20px; 
+	border:8px solid #fff;
 }
 
 
@@ -309,6 +359,7 @@ ul .share-group{
 .content{
 	width: 100%;
 	min-height: 540px;
+	color: #fff;
 }
 .content-first {
 	background: #1889C5;
@@ -320,6 +371,7 @@ ul .share-group{
 }
 .content-third {
 	background: #56A36C;
+	height:600px;
 }
 .content-fourth {
 	background: #7E884F;
