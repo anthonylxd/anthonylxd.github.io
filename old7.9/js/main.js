@@ -1,12 +1,17 @@
-$(function()
+document.onreadystatechange = function() {
+	if(document.readyState =="complete"){
+		$(".loading").fadeOut();		
+	}
+}
+
+;$(function()
 {
 	'use strict';
 
 	var sidebar = $('#sidebar'),//选择侧栏
 		mask= $('#mask'),
 		sidebar_trigger = $('#sidebar_trigger'),
-		backButton = $('.back-to-top'),
-		blogbtn = $('#blogbtn');
+		backButton = $('.back-to-top');		
 		
 		function showSidebar(){
 			mask.fadeIn();
@@ -26,7 +31,7 @@ $(function()
 				scrollTop:0
 			},800)
 		}
-		backButton.on('click',backtop);
+		backButton.on('click',backtop)
 		
 
 
@@ -38,13 +43,6 @@ $(function()
 		})
 		
 		$(window).trigger('scroll');
-	
-		function backblog(){
-			$('html, body').animate({
-				scrollTop:790
-			},800)
-		}
-		blogbtn.on('click',backblog);
-
-
 })
+
+
