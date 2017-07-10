@@ -155,6 +155,7 @@ nav .logo{
 }
 .link-group  li a:hover {
 	transform: rotate(360deg);
+
 }
 .link-group .link-github {
 	background: url(../image/github.png) no-repeat center;
@@ -172,11 +173,13 @@ nav .logo{
 	display: inline-block;
 	text-align: right;
 	padding: 0;
+	vertical-align: top;
 }
 .information .value{
 	display: inline-block;
 	text-align: left;
 	padding: 0;
+	vertical-align: top;
 }
 .information li {
 	margin:4px 0px;
@@ -261,9 +264,11 @@ h2 {
 .item-group h3 {
 	border-bottom: 2px solid #7E884F;
 	display: inline;
+	cursor: pointer;
 }
 .item-group h3:hover {
 	border-bottom: 2px solid #fff;
+	padding:4px;
 }
 .item-group .item1 {
 	background: url(../image/weibo.jpg) no-repeat center;
@@ -274,6 +279,7 @@ h2 {
 	margin:0px auto;
 	margin-bottom:20px; 
 	border:8px solid #fff; 
+	transition:0.2s;
 }
 .item-group p {
 	margin-top: 20px;
@@ -289,8 +295,14 @@ h2 {
 	margin:0 auto;
 	margin-bottom:20px; 
 	border:8px solid #fff;
+	transition:0.2s;
 }
 
+.item-group .item2:hover , .item-group .item1:hover {
+	transform: rotate(0deg);
+	transform: scale(1.2);
+	box-shadow: 10px 10px 15px #CCC
+}
 
 footer{
 	background:#42474B; 
@@ -363,7 +375,7 @@ ul .share-group{
 }
 .content-first {
 	background: #1889C5;
-	height: 540px;
+	height: 600px;
 }
 .content-second {
 	background: #22B573;

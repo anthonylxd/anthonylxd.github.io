@@ -43,17 +43,17 @@ $(function()
 	
 		function backitem(){
 			$('html, body').animate({
-				scrollTop:1730
+				scrollTop:1790
 			},800)
 		}
 		function backwork(){
 			$('html, body').animate({
-				scrollTop:1130
+				scrollTop:1190
 			},800)
 		}
 		function backskill(){
 			$('html, body').animate({
-				scrollTop:590
+				scrollTop:680
 			},800)
 		}
 
