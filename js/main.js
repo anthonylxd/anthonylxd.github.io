@@ -63,3 +63,23 @@ $(function()
 
 
 })
+
+
+	//创建XMLHttpRequest
+	var request;
+	if(window.XMLHttpRequest){
+		request = new XMLHttpRequest();
+	}else{
+		request = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	console.log("1");
+	request.open("POST","http://123.206.42.190/research/GetRequest",true);
+	request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+	request.send();
+	console.log("2");
+	request.onreadystatechange=function() {
+  		if (request.readyState==4 && request.status==200){
+		var result = request.responseText;
+		alert(result);
+	}
+}

@@ -205,16 +205,31 @@ h2 {
 	border:2px solid #fff;
 	text-align: center;
 	min-width: 300px;
-	margin: 6px 10px;
+	margin: 6px 12px;
 	vertical-align: top;
 }
 .content-second ul li {
 	margin: 1px 0px; 
 	padding: 6px 0px;
+	position: relative;
 }
 .content-second ul li:hover {
 	background: #fff;
 	color: #000; 
+}
+.content-second ul li p{
+	display: none;
+	position: absolute;
+	top: -21px;
+	left: 300px;
+	background:rgba(46,140,170,1);
+	color:#fff;
+	text-align: left;
+	width: 110px;
+	padding: 6px 12px;
+}
+.content-second ul li:hover p{
+	display: block;
 }
 .content-second ul li:first-child {
 	margin: 0px; 
