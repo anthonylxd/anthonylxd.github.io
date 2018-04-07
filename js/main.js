@@ -41,43 +41,5 @@ $(function()
 		
 		$(window).trigger('scroll');
 	
-		function backitem(){
-			$('html, body').animate({
-				scrollTop:1790
-			},800)
-		}
-		function backwork(){
-			$('html, body').animate({
-				scrollTop:1190
-			},800)
-		}
-		function backskill(){
-			$('html, body').animate({
-				scrollTop:680
-			},800)
-		}
 
-		itembtn.on('click',backitem);
-		workbtn.on('click',backwork);
-		skillbtn.on('click',backskill);
 })
-
-
-// 	//创建XMLHttpRequest
-// 	var request;
-// 	if(window.XMLHttpRequest){
-// 		request = new XMLHttpRequest();
-// 	}else{
-// 		request = new ActiveXObject("Microsoft.XMLHTTP");
-// 	}
-// 	request.open("POST","http://123.206.42.190/research/GetRequest",true);
-// 	request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-// 	request.send();
-// 	request.onreadystatechange=function() {
-//   		if (request.readyState==4 && request.status==200){
-// 		var result = request.responseText;
-// 	}
-// }
-
-// window.open ('http://123.206.42.190/research/GetRequest','newwindow','height=100,width=400,top=0,left=0,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no') 
-// 

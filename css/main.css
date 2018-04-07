@@ -3,6 +3,7 @@
  */
 body {
 	font:12px Helvetica,Arial,sans-serif;
+	background: #FFEFDB;
 }
 ul {
 	margin: 0px;
@@ -24,9 +25,10 @@ header ul {
 header ul li {
 	display: inline-block;
 	margin: 5px 15px;
-	padding: 2px 10px;
-	font-size: 15px;
+	padding: 4px 10px;
+	font-size: 16px;
 	font-weight: 400px;
+	border-bottom: 2px solid #FFEFDB;
 }
 header ul li:hover {
 	border-bottom: 2px solid orange;
@@ -42,4 +44,114 @@ header ul li:nth-of-type(even) {
 }
 header ul li:nth-of-type(3n) {
 	color: rgb(47, 152, 66);
+}
+
+
+.container{
+	width: 960px;
+	height: 460px;
+	margin: 72px auto;
+	position: relative;
+}
+section img{
+	width: 320px;
+	height: 210px;
+	padding: 10px;
+	background: #fff;
+	border: 1px solid #ddd;
+	position: absolute;
+	/*top: 50px;left: 200px;*/
+	/*transform: rotate(25deg);*/
+	transition:1s; 
+}
+section img:hover{
+	transform: rotate(0deg);
+	transform: scale(1.2);
+	box-shadow: 10px 10px 15px #CCC
+}
+.s1{
+	top: 0px;left: 0px;
+	transform: rotate(25deg);
+}
+.s2{
+	top: 0px;left: 340px;
+	transform: rotate(-5deg);
+	z-index: 2;
+}
+.s3{
+	top: 5px;left: 660px;
+	transform: rotate(15deg);
+}
+.s4{
+	top: 240px;left: 10px;
+	transform: rotate(-10deg);
+}
+.s5{
+	top: 230px;left: 380px;
+	transform: rotate(18deg);
+}
+.s6{
+	top: 260px;left: 740px;
+	transform: rotate(25deg);
+}
+
+
+footer{
+	background:#42474B; 
+	color: #fff;
+	min-height: 80px;
+	text-align: center;
+}
+ul {
+    margin: 0px;
+    list-style: none;
+}
+.share-group li{
+	padding:12px; 
+	display:inline-block;
+}
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+.copy{
+	padding-bottom: 20px;
+}
+
+
+#mask{
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);	
+}
+#sidebar{
+	position: fixed;
+	width: 220px;
+	background: #333;
+	color: #fff;
+	top: 0;
+	right: -220px;
+	bottom: 0;
+	padding: 20px 0;
+	transition: right 0.5s;
+}
+#sidebar ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#sidebar ul a{
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 30px;
+	width:100%;
+	display: inline-block;
+	font-size: 18px;
+}
+#sidebar ul a:hover{
+	background: #444;
 }
