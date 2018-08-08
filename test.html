@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/x-icon" href="image/tubiao.ico" media="screen" />
+	<title>Anthonylxd</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="css/Normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/test.css">
 </head>
 <body>
-test
+<header class="header">
+	<div class="headimg">
+		<span>
+			<img src="image/github.jpg"/>
+		</span>
+		<span>Anthonylxd</span>
+	</div>
+	<div class="icon">
+		<span>
+			<a target="_blank" href="https://github.com/anthonylxd"><img src="image/github.png"/></a>
+		</span>
+		<span>
+			<a target="_blank" href="https://my.oschina.net/u/2613520/"><img src="image/blog.png"/></a>
+		</span>
+	</div>
+</header>
 
-<script type="text/javascript">
-window.onload = function() {
-	//创建XMLHttpRequest
-	var request;
-	if(window.XMLHttpRequest){
-		request = new XMLHttpRequest();
-	}else{
-		request = new ActiveXObject("Microsoft.XMLHTTP");
-	}
-	console.log("1");
-	request.open("POST","http://123.206.42.190/research/GetRequest",true);
-	request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-	request.send();
-	console.log("2");
-	request.onreadystatechange=function() {
-  		if (request.readyState==4 && request.status==200){
-		var result = request.responseText;
-		alert(result);
-	}
-}
-}
-</script>
+<div>
+	<div>
+		
+	</div>
+	<div>
+	</div>
+</div>
 </body>
 </html>

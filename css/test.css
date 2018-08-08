@@ -1,0 +1,26 @@
+header {
+	background: #6495ED;
+	color: #fff;
+}
+header img {
+	border-radius: 100px;
+}
+
+header .headimg {
+	margin: 0px 10px 10px 30px;
+	padding-top: 14px;
+}
+header .headimg img{
+	width:60px;
+	height: 60px;
+}
+header .icon {
+	margin: 10px 0px 10px 0px; 
+}
+header .icon span {
+	margin: 0px 8px;
+}
+header .icon img{
+	width:30px;
+	height: 30px;
+}
