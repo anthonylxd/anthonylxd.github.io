@@ -1,6 +1,12 @@
+ul {
+	list-style: none;
+	padding: 0;
+}
+
 header {
 	background: #6495ED;
 	color: #fff;
+	height: 20%;
 }
 header img {
 	border-radius: 100px;
@@ -13,14 +19,69 @@ header .headimg {
 header .headimg img{
 	width:60px;
 	height: 60px;
+	vertical-align: middle;
+}
+header .headimg .name {
+	margin-left: 20px;
+	font-size: 18px;
+	padding-bottom: 4px;
+	border-bottom: 3px solid #fff;
 }
 header .icon {
-	margin: 10px 0px 10px 0px; 
+	margin: 10px 0px 10px 30px; 
 }
 header .icon span {
 	margin: 0px 8px;
+	padding:4px;
 }
 header .icon img{
 	width:30px;
 	height: 30px;
+}
+
+
+.content {
+	margin-top: 2%;
+}
+.leftcontent {
+	background: #6495ED;
+	color: #fff;
+	width: 20%;
+	margin:0% 0 0 6%;
+	box-shadow: 10px 10px 15px #CCC;
+	transition:1s; 	
+	float: left;
+}
+.leftcontent:hover{
+	transform: scale(1.05);
+}
+.leftcontent ul li {
+	padding: 8px 2px 10px 12px;
+	margin:0px 0px 2px 4px;
+	font-size: 17px;
+	font-weight: 720;
+	cursor: pointer;
+}
+
+
+.rightcontent {
+	width:64%;
+	margin-right:6%; 
+	float: right;
+	box-shadow: 0px 6px 14px #CCC;
+}
+.rightcontent .skill{
+	line-height:140%; 
+	letter-spacing:1.6px;
+	margin: 10px 0px 10px 14px;
+}
+
+
+
+
+.hiddenClass {
+	display: none;
+}
+.showClass {
+	display: block;
 }
