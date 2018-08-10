@@ -14,5 +14,4 @@ $(".leftcontent li").click(function(){
 
 
 
-
 });
