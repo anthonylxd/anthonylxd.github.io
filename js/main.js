@@ -1,10 +1,21 @@
-$(function()
-{
-	'use strict';
+$(function(){
+
+$(".leftcontent li").click(function(){
+	var obj = $(this).attr("obj");
+	
+	$(".leftcontent li").each(function(){
+		$(this).removeClass("select");
+		var o = $(this).attr("obj");
+		$("."+o).hide();
+	});
+	$(this).addClass("select");
+	$("."+obj).show();
+});
+
 
 	var sidebar = $('#sidebar'),//选择侧栏
 		mask= $('#mask'),
-		sidebar_trigger = $('#sidebar_trigger'),
+		sidebar_trigger = $('.sidebar_trigger'),
 		backButton = $('.back-to-top'),
 		itembtn = $('#itembtn'),
 		workbtn = $('#workbtn'),
@@ -30,8 +41,6 @@ $(function()
 		}
 		backButton.on('click',backtop);
 		
-
-
 		$(window).on('scroll',function(){
 			if($(window).scrollTop()>$(window).height())
 					backButton.fadeIn();
@@ -40,6 +49,5 @@ $(function()
 		})
 		
 		$(window).trigger('scroll');
-	
 
-})
+});

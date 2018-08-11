@@ -1,21 +1,10 @@
-$(function(){
-
-$(".leftcontent li").click(function(){
-	var obj = $(this).attr("obj");
-	
-	$(".leftcontent li").each(function(){
-		$(this).removeClass("select");
-		var o = $(this).attr("obj");
-		$("."+o).hide();
-	});
-	$(this).addClass("select");
-	$("."+obj).show();
-});
-
+$(function()
+{
+	'use strict';
 
 	var sidebar = $('#sidebar'),//Ñ¡Ôñ²àÀ¸
 		mask= $('#mask'),
-		sidebar_trigger = $('.sidebar_trigger'),
+		sidebar_trigger = $('#sidebar_trigger'),
 		backButton = $('.back-to-top'),
 		itembtn = $('#itembtn'),
 		workbtn = $('#workbtn'),
@@ -41,6 +30,8 @@ $(".leftcontent li").click(function(){
 		}
 		backButton.on('click',backtop);
 		
+
+
 		$(window).on('scroll',function(){
 			if($(window).scrollTop()>$(window).height())
 					backButton.fadeIn();
@@ -49,5 +40,6 @@ $(".leftcontent li").click(function(){
 		})
 		
 		$(window).trigger('scroll');
+	
 
-});
+})

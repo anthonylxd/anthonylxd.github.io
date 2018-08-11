@@ -3,86 +3,35 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" type="image/x-icon" href="image/tubiao.ico" media="screen" />
-	<title>Anthonylxd</title>
+	<title>个人主页</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<link rel="stylesheet" type="text/css" href="css/Normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/test.css">
-	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
-	<script type="text/javascript" src="js/test.js"></script>
 </head>
 <body>
-<header class="header">
-	<div class="headimg">
-		<img class="sidebar_trigger" src="image/github.jpg"/>
-		<span class="name sidebar_trigger">Anthonylxd</span>
-	</div>
-	<div class="icon">
-		<span>
-			<a title="github" target="_blank" href="https://github.com/anthonylxd"><img src="image/github.png"/></a>
-		</span>
-		<span>
-			<a title="博客" target="_blank" href="https://my.oschina.net/u/2613520/"><img src="image/blog.png"/></a>
-		</span>
-	</div>
+<header>
+	<img src="image/header.gif">
+	<ul>
+		<li><a>首页</a></li>
+		<li><a>新鲜事</a></li>
+		<li><a>时光轴</a></li>
+		<li><a id="sidebar_trigger">关于我</a></li>
+	</ul>
 </header>
- 
-<div class="content">
-	<div class="leftcontent">
-		<ul>
-			<li class="select" obj="skill">我的技能</li>
-			<li obj="experence">个人经历</li>
-			<li obj="project">参与项目</li>
-			<li obj="works">作品展示</li>
-		</ul>
+<section>
+	<div class="container">
+		<img class="s1" src="image/1.jpg">
+		<img class="s2" src="image/2.jpg">
+		<img class="s3" src="image/3.jpg">
+		<img class="s4" src="image/4.jpg">
+		<img class="s5" src="image/5.jpg">
+		<img class="s6" src="image/6.jpg">
 	</div>
-	<div class="rightcontent">
-		<div class="skill">
-			<pre>
-1、Java基础知识扎实，了解常见的设计模式
-2、掌握Spring，Spring boot，Mybatis等主流Java框架的开发应用
-3、掌握HTML，CSS，JavaScript，Ajax等Web前端开发技术及Vue等主流前端框架
-4、熟练掌握Oracle、MySQL数据库
-5、熟悉Tomcat服务器的应用，了解Linux系统的操作
-6、熟悉ireporter，水晶报表等工具的使用
-			</pre>
-		</div>
-		<div class="experence">
-			<h4>教育经历</h4>
-			2013.09-2017.06   齐鲁工业大学  信息与计算科学  本科
-			<h4>工作经历</h4>
-			<div>
-				2017-2018 山东国子软件股份有限公司 软件开发工程师
-			</div>
-			<hr>
-			<div>
-				2016-2017 济南普联软件公司 Java开发工程师
-			</div>
-		</div>
-		<div class="project">
-			<h4>中国地质大学固定资产管理系统</h4>
-			<pre>
-通过使用固定资产管理系统，确保公有资产的安全与完整，合理配置和有效使用公有资产
-我的职责： 根据业务需求调整数据模型，设计开发程序，实现业务逻辑，编写开发文档，系统测试与优化
-主要负责功能： 资产变动，资产处置，统计帐表，国管局上报
-			</pre>
-			<hr/>
-			<h4>天津科技大学创新实验室管理系统</h4>
-通过使用实验室管理系统对创新实验室基金项目从申请到完成进行完整流程的管理和记录，
-			<pre></pre>
-		</div>
-		<div class="works">
-			<ul>
-			<li><a target="_blank" href="https://anthonylxd.github.io/baidu-ife-learn/">ife百度前端技术学院练习</a> <a target="_blank" href="http://ife.baidu.com">相关介绍</a></li>
-			<li><a target="_blank" href="">时间管理系统</a></li>
-			</ul>
-		</div>
-	</div>
-</div>
+</section>
 
 <footer>
-	<div class="footercontent">
 		<ul class="share-group">
 			<li><a target="_blank" href="https://github.com/anthonylxd">github</a></li>
 			<li><a target="_blank" href="http://www.imooc.com/u/2542632">慕课网（imooc）</a></li>	
@@ -90,16 +39,19 @@
 			<li><a target="_blank" href="http://my.oschina.net/u/2613520/blog">oschina</a></li>
 		</ul>
 		<div class="copy">
-			© Anthonylxd 2018.8
+			© Anthonylxd 2018.3
 		</div>
-	</div>
-</footer>
+	</footer>
 
 <div id="mask"></div>
 <div id="sidebar">
-		<ul>		
-			<li><a>我的邮箱：lxdblues@foxmail.com</a></li>	
+		<ul>
+			<li><a target="_blank" href="https://github.com/anthonylxd">github</a></li>		
+			<li><a>邮箱：lxdblues@foxmail.com</a></li>
+			<!-- <li><a>备用邮箱：anthonylxd163@163.com</a></li> --><!-- 	<a href="test.html">test</a> -->	
 		</ul>
 </div>
+<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="js/test.js"></script>
 </body>
 </html>
