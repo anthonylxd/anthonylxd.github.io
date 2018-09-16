@@ -1,5 +1,6 @@
 body {
 	font-family:Helvetica,Arial,sans-serif;
+/*	overflow: hidden; */
 }
 ul {
 	list-style: none;
@@ -53,6 +54,9 @@ header .icon img:hover {
 .content {
 	margin-top: 2%;
 }
+.content_hr {
+	height: 50px;
+	padding-bottom: 14px;
 .leftcontent {
 	background: #6495ED;
 	color: #fff;
@@ -88,8 +92,11 @@ header .icon img:hover {
 	letter-spacing:1.6px;
 	margin: 10px 0px 10px 14px;
 }
-.experence,.project,.works {
+.rightcontent > div {
 	display: none;
+}
+.rightcontent div:first-child {
+	display: block;
 }
 
 
@@ -115,14 +122,14 @@ footer a {
     text-decoration: none;
     color: #fff;
 }
-.copy{
+.copy {
 	padding-bottom: 4px;
 }
 .footercontent {
 	background:#42474B; 
-	display: none;
+	
 }
-footer:hover .footercontent{
+footer:hover .footercontent {
 	display: block;
 }
 
@@ -141,7 +148,7 @@ footer:hover .footercontent{
 }
 
 
-#mask{
+#mask {
 	display: none;
 	position: fixed;
 	top: 0;
@@ -150,7 +157,7 @@ footer:hover .footercontent{
 	left: 0;
 	background: rgba(0,0,0,0.4);	
 }
-#sidebar{
+#sidebar {
 	position: fixed;
 	width: 220px;
 	background: #333;
@@ -161,12 +168,12 @@ footer:hover .footercontent{
 	padding: 20px 0;
 	transition: right 0.5s;
 }
-#sidebar ul{
+#sidebar ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-#sidebar ul a{
+#sidebar ul a {
 	color: #fff;
 	text-decoration: none;
 	padding: 10px 30px;
@@ -174,6 +181,6 @@ footer:hover .footercontent{
 	display: inline-block;
 	font-size: 18px;
 }
-#sidebar ul a:hover{
+#sidebar ul a:hover {
 	background: #444;
 }

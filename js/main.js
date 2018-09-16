@@ -1,26 +1,13 @@
 $(function(){
 
-$(".leftcontent li").click(function(){
-	var obj = $(this).attr("obj");
-	
-	$(".leftcontent li").each(function(){
-		$(this).removeClass("select");
-		var o = $(this).attr("obj");
-		$("."+o).hide();
-	});
-	$(this).addClass("select");
-	$("."+obj).show();
-});
-
-
-	var sidebar = $('#sidebar'),//选择侧栏
+		var sidebar = $('#sidebar'),//选择侧栏
 		mask= $('#mask'),
 		sidebar_trigger = $('.sidebar_trigger'),
 		backButton = $('.back-to-top'),
 		itembtn = $('#itembtn'),
 		workbtn = $('#workbtn'),
 		skillbtn = $('#skillbtn');
-		
+
 		function showSidebar(){
 			mask.fadeIn();
 			//sidebar.animate({'right':0});
@@ -49,5 +36,17 @@ $(".leftcontent li").click(function(){
 		})
 		
 		$(window).trigger('scroll');
+
+		$(".leftcontent li").click(function(){
+			var obj = $(this).attr("obj");
+			
+			$(".leftcontent li").each(function(){
+				$(this).removeClass("select");
+				var o = $(this).attr("obj");
+				$("."+o).hide();
+			});
+			$(this).addClass("select");
+			$("."+obj).show();
+		});
 
 });
